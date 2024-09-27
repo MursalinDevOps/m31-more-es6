@@ -27,3 +27,17 @@ console.log(divisibleByTen); // [50, 90, 30]
 // array.find method
 const divisibleByTen2 = arr.find((n) => n % 10 === 0);
 console.log(divisibleByTen2); // [50]
+
+// TASK-3 : display the instructor names that has the position senior!
+
+const instructors = [
+    {name:'Emma', age:28, position:'Senior'},
+    {name:'Tyler', age:26, position:'Junior'},
+    {name:'Chris', age:30, position:'Senior'}
+]
+
+for(const instructor of instructors){
+    if(instructor.position.toLowerCase() === 'senior'.toLowerCase()){
+        console.log(instructor.name);
+    }
+}
